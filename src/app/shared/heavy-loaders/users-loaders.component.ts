@@ -64,16 +64,20 @@ import { CommonModule } from '@angular/common';
             </div>
           </div>
 
-          <!-- Evento 3 (Agrega más eventos según sea necesario) -->
+          <!-- Evento 3 () -->
           <div class="timeline-event mb-8">
             <div class="timeline-badge bg-gray-600">
-              <span class="text-white">Año</span>
+              <span class="text-white">2023</span>
             </div>
             <div class="timeline-panel bg-white shadow-md p-4 rounded-md">
-              <h3 class="text-xl font-semibold text-gray-800 leading-tight">Nombre del Evento</h3>
-              <p class="text-gray-600 text-sm mb-2">Fecha del Evento</p>
+              <h3 class="text-xl font-semibold text-gray-800 leading-tight">Desarrollo Frontend Autodidacta (Junior)</h3>
+              <p class="text-gray-600 text-sm mb-2">2023</p>
               <p class="text-gray-800 leading-loose">
-                Descripción del evento.
+              Competente en Angular y con conocimientos sólidos en HTML, CSS (incluyendo Tailwind CSS y
+              Bootstrap) y JavaScript, capaz de contribuir al desarrollo de interfaces de usuario atractivas y
+              funcionales como desarrollador junior. Mi habilidad en maquetado y diseño web con Tailwind CSS y
+              Bootstrap me permite crear sitios web modernos y responsivos que mejoran la experiencia del
+              usuario.
               </p>
             </div>
           </div>

@@ -65,20 +65,8 @@ import { CommonModule } from '@angular/common';
               </p>
             </div>
           </div>
-
           <!-- Evento 3 (Agrega más eventos según sea necesario) -->
-          <div class="timeline-event mb-8">
-            <div class="timeline-badge bg-gray-600">
-              <span class="text-white">Año</span>
-            </div>
-            <div class="timeline-panel bg-white shadow-md p-4 rounded-md">
-              <h3 class="text-xl font-semibold text-gray-800 leading-tight">Nombre del Evento</h3>
-              <p class="text-gray-600 text-sm mb-2">Fecha del Evento</p>
-              <p class="text-gray-800 leading-loose">
-                Descripción del evento.
-              </p>
-            </div>
-          </div>
+
         </div>
       </div>
     </div>
