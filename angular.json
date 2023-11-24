@@ -31,7 +31,7 @@
           },
           "configurations": {
             "production": {
-              "baseHref": "/https://multimediav22.github.io/Miportafolio//",
+              "baseHref": "/https://multimediav22.github.io/Miportafolio/",
               "budgets": [
                 {
                   "type": "initial",
