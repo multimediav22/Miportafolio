@@ -38,8 +38,8 @@ export const routes: Routes = [
       loadComponent: () => import('./dashboard/pages/defer-views/defer-views.component'),
     },
     {
-      path: 'user-list',
-      title: 'User List',
+      path: 'Social Network',
+      title: 'Redes Sociales',
       loadComponent: () => import('./dashboard/pages/defer-users/defer-users.component'),
     },
     {

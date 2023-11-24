@@ -39,7 +39,7 @@ import { CommonModule } from '@angular/common';
             </div>
             <div class="timeline-panel bg-white shadow-md p-4 rounded-md">
               <h3 class="text-xl font-semibold text-gray-800 leading-tight">App Pet</h3>
-              <p class="text-gray-600 text-sm mb-2">Formulario</p>
+              <p class="text-gray-600 text-sm mb-2">Formulario practica</p>
               <p class="text-gray-800 leading-loose">
               <a href="https://multimediav22.github.io/AngularBases/" target="_blank" rel="noopener noreferrer">
               <i class="fab fa-github"></i> https://multimediav22.github.io/AngularBases/
@@ -54,10 +54,14 @@ import { CommonModule } from '@angular/common';
               <span class="text-white">2023</span>
             </div>
             <div class="timeline-panel bg-white shadow-md p-4 rounded-md">
-              <h3 class="text-xl font-semibold text-gray-800 leading-tight">Desarrollo Backend Autodidacta</h3>
-              <p class="text-gray-600 text-sm mb-2">Motor de busquedas gif dedicado a las mascotas</p>
+              <h3 class="text-xl font-semibold text-gray-800 leading-tight">Angular</h3>
+              <p class="text-gray-600 text-sm mb-2">Motor de busquedas con gifs dedicado a las mascotas, utilizando GifsServices y postman</p>
               <p class="text-gray-800 leading-loose">
-              https://github.com/multimediav22/Pets.app
+              <a href="https://github.com/multimediav22/Pets.app" target="_blank" class="flex items-center space-x-2">
+              <i class="fab fa-github text-3xl"></i>
+              <span class="text-base font-bold">https://github.com/multimediav22/Pets.app</span>
+              </a>
+
               </p>
             </div>
           </div>
