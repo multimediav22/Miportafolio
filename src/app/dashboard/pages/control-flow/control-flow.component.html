@@ -1,0 +1,75 @@
+
+
+<app-title title="Control Flow" withShadow />
+
+<!-- Contenedor de la sección 1 -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-3">
+
+  <!-- Tarjeta principal -->
+  <div class="bg-gray-100 rounded shadow p-10
+   card transition duration-300
+   transform hover:scale-105
+   hover:shadow-lg hover:border-2 border-teal-500">
+
+    <!-- Título de la tarjeta -->
+    <h2 class="text-2xl font-bold mb-5 text-gray-800">if: {{showContent()}}</h2>
+
+    <!-- Botón con estilos elegantes y colores profesionales -->
+    <button (click)="toggleContent()"
+    class="bg-teal-500 hover:bg-teal-700
+     text-white font-bold py-2 px-4 rounded">
+      click me!
+    </button>
+
+    <!-- Corrección en la directiva @if -->
+    @if(showContent()) {
+      <p>Hello World</p>
+    } @else {
+      <p>Goodbye World</p>
+    }
+
+  </div>
+
+  <!-- Botón fuera de la tarjeta vinculado a toggleContent -->
+  <button (click)="toggleContent()" class="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded mt-4">
+    click me outside the card!
+  </button>
+
+</section>
+
+<!-- Contenedor de la sección 2 -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-3">
+
+  <!-- Tarjeta principal -->
+  <div class="bg-gray-100 rounded shadow p-10
+   card transition duration-300
+   transform hover:scale-105
+   hover:shadow-lg hover:border-2 border-teal-500">
+   <ul>
+    @for (framework of frameworks();  track framework;
+    let i = $index, first = $first,
+    last= $last, even = $even, odd= $odd, count = $count) {
+      <li [class]="{
+        'bg-red-100' : even && !first && !last,
+        'bg-blue-200' : odd && !first && !last,
+        'bg-green-200' : first|| last,
+      }">
+      {{i+1}}/{{count}}-{{framework}}
+    </li>
+    }
+  </ul>
+    <!-- Directiva @for corregida -->
+  </div>
+  <div class="bg-gray-100 rounded shadow p-10
+  card transition duration-300
+  transform hover:scale-105
+  hover:shadow-lg hover:border-2 border-teal-500">
+  <ul>
+    @for (framework of frameworks2(); track framework;) {
+      <li>{{framework}}</li>
+    }@empty {
+      <p>No hay frameworks</p>
+    }
+  </ul>
+  </div>
+</section>
