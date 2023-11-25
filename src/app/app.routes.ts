@@ -7,13 +7,13 @@ export const routes: Routes = [
     children: [
       {
       path: 'Signals',
-      title: 'Angular 17',
+      title: 'Angular 17 Singals',
       loadComponent: () => import('./dashboard/pages/change-detection/change-detection.component'),
 
     },
     {
       path: 'Interacciones',
-      title: 'Angular17',
+      title: 'Angular17 Interacciones',
       loadComponent: () => import('./dashboard/pages/control-flow/control-flow.component'),
 
     },{
