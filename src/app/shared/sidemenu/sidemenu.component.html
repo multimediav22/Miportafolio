@@ -1,41 +1,161 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-...." crossorigin="anonymous" />
+<!DOCTYPE html>
+<html lang="es">
 
-<div id="menu" class="bg-gray-900 min-h-screen z-10 text-slate-300 w-64 left-0 h-screen overflow-y-scroll">
-  <div id="logo" class="my-4 px-6">
-    <h1 class="text-3xl lg:text-4xl font-bold text-white mb-2 flex items-center">
-      Multimedia
-      <span class="text-blue-500 ml-2 flex items-center space-x-2">
-        <i class="fab fa-angular"></i> <!-- Angular -->
-        <i class="fab fa-node-js"></i> <!-- Node.js -->
-        <i class="fab fa-js"></i> <!-- JavaScript -->
-      </span>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-...." crossorigin="anonymous" />
+    <!-- Agrega cualquier otra hoja de estilos o scripts que puedas necesitar -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-    </h1>
-  </div>
+        #menu {
+            background-color: #1a202c;
+            min-height: 100vh;
+            z-index: 10;
+            text-align: center;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
 
-  <div id="profile" class="px-6 py-10">
-    <p class="text-slate-500">Developer | Angular</p>
-    <a href="#" class="inline-flex items-center space-x-2">
-      <span class="inline-block relative">
-        <img class="rounded-full w-8 h-8 border-4 border-transparent animate-spin hover:border-green-500" src="/src/app/images/Image03.png" alt="">
-      </span>
-      <span class="text-base font-bold">Jairo Vergara</span>
-    </a>
-  </div>
+        #logo {
+            padding: 1rem;
+        }
 
-  <div id="nav" class="w-full px-6">
-    @for(item of menuItems; track $index) {
-      <a [routerLink]="item.path" routerLinkActive="bg-blue-800" class="w-full px-2 inline-flex items-center border-b border-slate-700 py-3 hover:bg-white/5 transition ease-linear duration-150">
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
-          </svg>
+        #logo h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #logo .icon {
+            margin-left: 0.5rem;
+            color: #4299e1;
+        }
+
+        #profile {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #profile p {
+            color: #718096;
+            margin-bottom: 1rem;
+        }
+
+        #profile a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+
+        #profile img {
+            width: 80px;
+            height: 80px;
+            border: 4px solid transparent;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            animation: spin 2s linear infinite;
+        }
+
+        #profile span {
+            text-align: center;
+            margin-top: 0.2rem; /* Ajusta el margen superior */
+        }
+
+        #nav {
+            flex: 1;
+            padding: 1rem;
+            text-align: left;
+        }
+
+        #nav a {
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            padding: 1rem 0;
+            border-bottom: 1px solid #4a5568;
+            transition: background-color 0.3s ease;
+        }
+
+        #nav a:hover {
+            background-color: #4299e1;
+        }
+
+        @media (min-width: 768px) {
+            #menu {
+                width: 20rem;
+            }
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <title>Tu Título</title>
+</head>
+
+<body>
+
+    <div id="menu">
+        <div id="logo">
+            <h1>
+                Multimedia
+                <span class="icon">
+                    <i class="fab fa-angular"></i> <!-- Angular -->
+                    <i class="fab fa-node-js"></i> <!-- Node.js -->
+                    <i class="fab fa-js"></i> <!-- JavaScript -->
+                    <i class="fab fa-react"></i> <!-- React -->
+                </span>
+            </h1>
         </div>
-        <div class="flex flex-col ml-3">
-          <span class="text-lg font-bold leading-5 text-white">{{item.title}}</span>
-          <span class="text-sm text-white/50 hidden md:block">{{item.path}}</span>
+
+        <div id="profile">
+            <p>Developer | Angular</p>
+            <a href="#">
+                <img src="/src/app/images/Image03.png" alt="">
+                <span class="text-base font-bold">Jairo Vergara</span>
+            </a>
         </div>
-      </a>
-    }
-  </div>
-</div>
+
+        <div id="nav">
+            @for(item of menuItems; track $index) {
+            <a [routerLink]="item.path" routerLinkActive="bg-blue-800">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013..75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+                    </svg>
+                </div>
+                <div class="flex flex-col ml-3">
+                    <span class="text-lg font-bold leading-5 text-white">{{item.title}}</span>
+                    <span class="text-sm text-white/50 hidden md:block">{{item.path}}</span>
+                </div>
+            </a>
+            }
+        </div>
+    </div>
+
+    <!-- Agrega cualquier otra sección o contenido según sea necesario -->
+
+</body>
+
+</html>

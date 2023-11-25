@@ -1,5 +1,96 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <!-- hoja de estilos o scripts que puedas necesitar -->
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      color: #1e1e1e;
+      margin: 0;
+      padding: 0;
+      transition: background-color 0.3s ease;
+    }
 
-<section class="grid grid-cols-1">
-  <app-heavy-loaders-slows [cssClass]="'Ingeniero Multimedia'"></app-heavy-loaders-slows>
-</section>
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+
+    .section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 16px;
+      transition: grid-template-columns 0.3s ease;
+    }
+
+    .cards-container {
+      max-height: 100%; /* Cambiado de 70vh a 100% */
+      overflow-y: auto;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .card-description {
+      font-size: 1rem;
+      color: #636363;
+    }
+
+    @media (max-width: 767px) {
+      .card {
+        padding: 16px;
+      }
+    }
+  </style>
+  <title>Tu Título</title>
+</head>
+<body>
+
+  <div class="container">
+    <section class="section">
+      <div class="cards-container">
+        <div class="card md:card-lg lg:card-xl">
+          <div class="card-content">
+            <app-heavy-loaders-slows [cssClass]="'Ingeniero Multimedia'"></app-heavy-loaders-slows>
+            <p class="card-description mt-4">Académico</p>
+          </div>
+        </div>
+        <!-- Repite este bloque para cada elemento en tu cuadrícula -->
+      </div>
+    </section>
+  </div>
+
+  <!-- Agrega cualquier otra sección o contenido según sea necesario -->
+
+</body>
+</html>
