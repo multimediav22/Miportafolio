@@ -12,17 +12,18 @@ import { RouterModule } from '@angular/router';
 })
 export class SidemenuComponent {
   public menuItems = routes
-  .map(route => route.children ??[])
-  .flat()
-  .filter(route => route && route.path)
-  .filter(route => !route.path?.includes(':'))
+    .map(route => route.children ?? [])
+    .flat()
+    .filter(route => route && route.path)
+    .filter(route => !route.path?.includes(':'));
+  public imageLoadError = false;
+  public imageSrc: string = 'assets/images/nodejs.png';
+  public Image03 = {
+    images: ['/app/images/Image03.png'],
+    // Otros datos de la imagen si es necesario
+  };
 
   constructor() {
-
-  //.map(route => route.children ??[])
-  //.flat()
-  //.filter(route => route && route.path)
-  //.filter(route => !route.path?.includes(':'))
-  //console.log(dashboardRoutes);
+    // Tu lógica del constructor aquí
   }
 }
