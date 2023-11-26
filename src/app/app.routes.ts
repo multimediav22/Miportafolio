@@ -7,7 +7,7 @@ export const routes: Routes = [
     children: [
       {
       path: 'Signals',
-      title: 'Angular 17 Singals',
+      title: 'Angular 17 Signals',
       loadComponent: () => import('./dashboard/pages/change-detection/change-detection.component'),
 
     },
