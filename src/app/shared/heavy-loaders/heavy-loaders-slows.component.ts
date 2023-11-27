@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
   template: `
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-...." crossorigin="anonymous" />
 
- <section [ngClass]="['w-full', 'h-[1000px]', 'rounded-md', 'overflow-hidden', 'bg-gray-200', 'transition-all', 'hover:bg-gray-300', cssClass]">
+ <section [ngClass]="['w-full', 'h-auto', 'rounded-md', 'overflow-hidden', 'bg-gray-200', 'transition-all', 'hover:bg-gray-300', 'md:w-full',  'lg:w-2/3', cssClass]">
   <div class="p-6 relative flex flex-col lg:flex-row h-auto">
     <!-- Contenido de la tarjeta a la izquierda -->
     <div class="w-full lg:w-2/3 pr-0 lg:pr-6 overflow-y-auto">
@@ -18,6 +18,7 @@ import { CommonModule } from '@angular/common';
         <nav class="bg-zinc-800 text-white p-4 mb-4">
           <div class="container mx-auto">
             <!-- Logo o Nombre del Sitio -->
+            <img class="rounded-full w-8 h-8 border-4 border-transparent  hover:border-green-500" src="app/images/graduacion.png" alt="">
             <div class="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 text-gray-400 leading-loose">
               INGENIERO MULTIMEDIA
             </div>
@@ -27,9 +28,14 @@ import { CommonModule } from '@angular/common';
    <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 text-gray-800 leading-loose">
   Educación
   <hr class="my-2 border-t border-gray-400" /> <!-- Línea horizontal -->
-  <div class="bg-black rounded-md p-4">
-    <span class="text-white text-gray-600 text-sm">Universidad Autónoma De Occidente</span>
-    <span class="text-white text-gray-600 text-sm ml-2 mr-4">Enero 2015 - Octubre 2023</span>
+  <div class="bg-black rounded-md p-1 w-2/3">
+  <img class="rounded-full w-29 h-29 border-4 border-transparent mr-4 ml-1 hover:border-green-500" src="app/images/Logo-nuevo-acreditación.png" alt="">
+
+    <span class="text-white text-white text-sm">Universidad Autónoma De Occidente</span>
+
+
+    <span class="text-white text-white text-sm ml-2 mr-4">Enero 2015 - Octubre 2023</span>
+
   </div>
 </h2>
 
@@ -48,9 +54,7 @@ import { CommonModule } from '@angular/common';
     </div>
 
     <!-- Imagen a la derecha -->
-    <div class="w-full lg:w-1/3 mt-6 lg:mt-0">
-      <img src="tu-imagen.jpg" alt="Imagen" class="w-full h-auto rounded-md">
-    </div>
+
   </div>
 </section>
 

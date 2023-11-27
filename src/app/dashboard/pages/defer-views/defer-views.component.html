@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-  <!-- hoja de estilos o scripts que puedas necesitar -->
+  <!-- Agrega cualquier otra hoja de estilos o scripts que puedas necesitar -->
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -27,11 +27,6 @@
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 16px;
       transition: grid-template-columns 0.3s ease;
-    }
-
-    .cards-container {
-      max-height: 100%; /* Cambiado de 70vh a 100% */
-      overflow-y: auto;
     }
 
     .card {
@@ -71,6 +66,16 @@
         padding: 16px;
       }
     }
+
+    .expand-card {
+      transition: max-height 0.3s ease;
+      max-height: 1000px;
+      overflow: hidden;
+    }
+
+    .expand-card:hover {
+      max-height: unset;
+    }
   </style>
   <title>Tu Título</title>
 </head>
@@ -78,15 +83,13 @@
 
   <div class="container">
     <section class="section">
-      <div class="cards-container">
-        <div class="card md:card-lg lg:card-xl">
-          <div class="card-content">
-            <app-heavy-loaders-slows [cssClass]="'Ingeniero Multimedia'"></app-heavy-loaders-slows>
-            <p class="card-description mt-4">Académico</p>
-          </div>
+      <div class="card md:card-lg lg:card-xl">
+        <div class="card-content">
+          <app-heavy-loaders-slows [cssClass]="'IngMultimedia'"></app-heavy-loaders-slows>
+          <p class="text-gray-600 mt-4">Backend - Frontend</p>
         </div>
-        <!-- Repite este bloque para cada elemento en tu cuadrícula -->
       </div>
+      <!-- Repite este bloque para cada elemento en tu cuadrícula -->
     </section>
   </div>
 

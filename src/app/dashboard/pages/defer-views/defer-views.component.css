@@ -1,0 +1,25 @@
+@media (max-width: 767px) {
+  .card {
+    padding: 16px;
+  }
+}
+
+/* Agregamos un estilo para el contenido del card en móviles */
+@media (max-width: 480px) {
+  .card-content {
+    padding: 10px;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-description {
+    font-size: 0.9rem;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+}

@@ -101,4 +101,13 @@ body {
 .rounded-circle {
   border-radius: 50%;
 }
+@keyframes spin {
+  0% { transform: rotate(0deg); border-color: transparent; }
+  100% { transform: rotate(0deg); border-color: #4CAF50; }
+}
+
+.animate-spin {
+  animation: spin 2s linear infinite;
+}
+
 

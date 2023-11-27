@@ -14,6 +14,7 @@ import { CommonModule } from '@angular/common';
       <nav class="bg-zinc-800 text-white p-2 md:p-4 mb-4">
         <div class="container mx-auto">
           <!-- Logo o Nombre del Sitio (puedes personalizar esto) -->
+
           <div class="text-2xl md:text-3xl lg:text-4xl font-semibold mb-2 md:mb-4 text-gray-400 leading-loose">
             INGENIERO MULTIMEDIA
           </div>
