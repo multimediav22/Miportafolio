@@ -39,7 +39,7 @@ import { CommonModule } from '@angular/common';
   </div>
 </h2>
 
-        <!-- Tarjeta blanca suave alrededor del texto -->
+        <!-- Texto -->
         <div class="bg-white bg-opacity-80 rounded-md shadow-md p-6 mb-6">
           <p class="text-gray-800 leading-loose">
             Soy graduado en Ingeniería Multimedia de la Universidad Autónoma de Occidente en Cali, con sólidas habilidades
@@ -53,7 +53,7 @@ import { CommonModule } from '@angular/common';
       </div>
     </div>
 
-    <!-- Imagen a la derecha -->
+
 
   </div>
 </section>
