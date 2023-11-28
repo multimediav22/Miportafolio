@@ -1,1 +1,0 @@
-import{S as n,Va as r,wb as a}from"./chunk-4POKWDE7.js";var f=(()=>{let e=class e{};e.\u0275fac=function(o){return new(o||e)},e.\u0275cmp=n({type:e,selectors:[["app-defer-users"]],standalone:!0,features:[r],decls:0,vars:0,template:function(o,i){},dependencies:[a]});let t=e;return t})();export{f as default};

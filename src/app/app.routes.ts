@@ -6,8 +6,8 @@ export const routes: Routes = [
     loadComponent: () => import('./dashboard/dashboard.component'),
     children: [
       {
-      path: 'Signals',
-      title: 'Angular 17 Signals',
+      path: 'Test',
+      title: 'Angular 17 Test',
       loadComponent: () => import('./dashboard/pages/change-detection/change-detection.component'),
 
     },
